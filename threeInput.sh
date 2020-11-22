@@ -14,7 +14,7 @@ result4=$(( ($a % $b) + $c ))
 echo "result is $result4"
 echo "_______________________________"
 declare -A dict
-
+declar -a Array
 dict[0]=$result1
 dict[1]=$result2
 dict[2]=$result3
@@ -23,6 +23,10 @@ dict[3]=$result4
 echo "number in dictionary are:"
 echo ${dict[@]}
 echo "___________________________"
-
-
+for key in "${!dict[@]}"
+do
+ arr[i]="${dict[$key]}"
+((i++))
+done
+echo "stored in array : ${arr[@]}"
 
