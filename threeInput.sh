@@ -7,6 +7,9 @@ echo "_______________________________"
 result2=$(( ($a* $b) + $c ))
 echo "result is $result2"
 echo "_______________________________"
+result3=$(( $c + ( $a/$b) ))
+echo "result is $result3"
+echo "_______________________________"
 
 
 
